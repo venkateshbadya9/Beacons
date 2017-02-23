@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		FDD6D3741E557EFB00748DBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6D3731E557EFB00748DBA /* main.m */; };
 		FDD6D3771E557EFB00748DBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6D3761E557EFB00748DBA /* AppDelegate.m */; };
-		FDD6D37A1E557EFB00748DBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6D3791E557EFB00748DBA /* ViewController.m */; };
 		FDD6D37D1E557EFB00748DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD6D37B1E557EFB00748DBA /* Main.storyboard */; };
 		FDD6D3801E557EFB00748DBA /* BeaconReceiver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDD6D37E1E557EFB00748DBA /* BeaconReceiver.xcdatamodeld */; };
 		FDD6D3821E557EFC00748DBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD6D3811E557EFC00748DBA /* Assets.xcassets */; };
 		FDD6D3851E557EFC00748DBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD6D3831E557EFC00748DBA /* LaunchScreen.storyboard */; };
 		FDD6D3901E557EFC00748DBA /* BeaconReceiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6D38F1E557EFC00748DBA /* BeaconReceiverTests.m */; };
 		FDD6D39B1E557EFC00748DBA /* BeaconReceiverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6D39A1E557EFC00748DBA /* BeaconReceiverUITests.m */; };
+		FDD6D3AA1E55808900748DBA /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6D3A91E55808900748DBA /* FirstVC.m */; };
+		FDD6D3AD1E55812500748DBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD6D3AC1E55812500748DBA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,6 @@
 		FDD6D3731E557EFB00748DBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDD6D3751E557EFB00748DBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FDD6D3761E557EFB00748DBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FDD6D3781E557EFB00748DBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FDD6D3791E557EFB00748DBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FDD6D37C1E557EFB00748DBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDD6D37F1E557EFB00748DBA /* BeaconReceiver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeaconReceiver.xcdatamodel; sourceTree = "<group>"; };
 		FDD6D3811E557EFC00748DBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,9 @@
 		FDD6D3961E557EFC00748DBA /* BeaconReceiverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconReceiverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD6D39A1E557EFC00748DBA /* BeaconReceiverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconReceiverUITests.m; sourceTree = "<group>"; };
 		FDD6D39C1E557EFC00748DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD6D3A81E55808900748DBA /* FirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstVC.h; path = ../FirstVC.h; sourceTree = "<group>"; };
+		FDD6D3A91E55808900748DBA /* FirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstVC.m; path = ../FirstVC.m; sourceTree = "<group>"; };
+		FDD6D3AC1E55812500748DBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD6D3AD1E55812500748DBA /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 				FDD6D38E1E557EFC00748DBA /* BeaconReceiverTests */,
 				FDD6D3991E557EFC00748DBA /* BeaconReceiverUITests */,
 				FDD6D3701E557EFB00748DBA /* Products */,
+				FDD6D3AB1E55812500748DBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +109,8 @@
 			children = (
 				FDD6D3751E557EFB00748DBA /* AppDelegate.h */,
 				FDD6D3761E557EFB00748DBA /* AppDelegate.m */,
-				FDD6D3781E557EFB00748DBA /* ViewController.h */,
-				FDD6D3791E557EFB00748DBA /* ViewController.m */,
+				FDD6D3A81E55808900748DBA /* FirstVC.h */,
+				FDD6D3A91E55808900748DBA /* FirstVC.m */,
 				FDD6D37B1E557EFB00748DBA /* Main.storyboard */,
 				FDD6D3811E557EFC00748DBA /* Assets.xcassets */,
 				FDD6D3831E557EFC00748DBA /* LaunchScreen.storyboard */,
@@ -141,6 +145,14 @@
 				FDD6D39C1E557EFC00748DBA /* Info.plist */,
 			);
 			path = BeaconReceiverUITests;
+			sourceTree = "<group>";
+		};
+		FDD6D3AB1E55812500748DBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDD6D3AC1E55812500748DBA /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +222,7 @@
 				TargetAttributes = {
 					FDD6D36E1E557EFB00748DBA = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = EC5XZ6CW6W;
+						DevelopmentTeam = L96E48X5Y7;
 						ProvisioningStyle = Automatic;
 					};
 					FDD6D38A1E557EFC00748DBA = {
@@ -280,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD6D3801E557EFB00748DBA /* BeaconReceiver.xcdatamodeld in Sources */,
-				FDD6D37A1E557EFB00748DBA /* ViewController.m in Sources */,
+				FDD6D3AA1E55808900748DBA /* FirstVC.m in Sources */,
 				FDD6D3771E557EFB00748DBA /* AppDelegate.m in Sources */,
 				FDD6D3741E557EFB00748DBA /* main.m in Sources */,
 			);
@@ -431,10 +443,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EC5XZ6CW6W;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L96E48X5Y7;
 				INFOPLIST_FILE = BeaconReceiver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "The-Lean-Apps.BeaconReceiver";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dressandfriendApp.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -443,10 +457,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EC5XZ6CW6W;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L96E48X5Y7;
 				INFOPLIST_FILE = BeaconReceiver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "The-Lean-Apps.BeaconReceiver";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dressandfriendApp.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -520,6 +536,7 @@
 				FDD6D3A11E557EFC00748DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDD6D3A21E557EFC00748DBA /* Build configuration list for PBXNativeTarget "BeaconReceiverTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +545,7 @@
 				FDD6D3A41E557EFC00748DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDD6D3A51E557EFC00748DBA /* Build configuration list for PBXNativeTarget "BeaconReceiverUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +554,7 @@
 				FDD6D3A71E557EFC00748DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
